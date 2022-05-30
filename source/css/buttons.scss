@@ -1,0 +1,72 @@
+// CTA buttons
+.cta {
+  display: inline-block;
+  font: 500 1rem/120% $font-family-base, sans-serif;
+  color: $astro-dark-900;
+  text-align: center;
+  text-decoration: if($link-decoration==none, null, none);
+  white-space: $btn-white-space;
+  vertical-align: middle;
+  cursor: if($enable-button-pointers, pointer, null);
+  user-select: none;
+  background-color: transparent;
+  border: 2px solid $astro-dark-900;
+  border-radius: $border-radius;
+  padding: .5rem 2rem;
+  @include transition($btn-transition);
+
+  &:hover,
+  &:focus {
+    color: $astro-light-100;
+    background-color: $astro-dark-900;
+    text-decoration: if($link-hover-decoration==underline, none, null);
+  }
+
+  .cta-check:focus + &,
+  &:focus {
+    outline: 0;
+    box-shadow: $btn-focus-box-shadow;
+  }
+
+  .cta-check:checked + &,
+  .cta-check:active + &,
+  &:active,
+  &.active {
+    @include box-shadow($btn-active-box-shadow);
+
+    &:focus {
+      @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+    }
+  }
+
+  &:disabled,
+  &.disabled,
+  fieldset:disabled & {
+    pointer-events: none;
+    opacity: $btn-disabled-opacity;
+    @include box-shadow(none);
+  }
+}
+
+.bg-dark .cta,
+.bg-red .cta {
+  color: $astro-light-100;
+  border: 2px solid $astro-light-100;
+
+  &:hover,
+  &:focus {
+    color: $astro-dark-900;
+    background-color: $astro-light-100;
+  }
+}
+
+.bg-light .cta {
+  color: $astro-dark-900;
+  border: 2px solid $astro-dark-900;
+
+  &:hover,
+  &:focus {
+    color: $astro-light-100;
+    background-color: $astro-dark-900;
+  }
+}
