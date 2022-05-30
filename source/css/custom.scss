@@ -467,7 +467,7 @@ footer {
     width: calc(100% - $nav-link-padding-x);
     // width: calc(100% - calc($nav-link-padding-x / 2));
     height: 0.15rem;
-    margin-top: 1.65rem;
+    margin-top: 3rem;
     // margin-left: calc(0rem - calc($nav-link-padding-x / 4));
     z-index: -1;
     top: 0;
@@ -478,5 +478,13 @@ footer {
     color: $nav-link-disabled-color;
     pointer-events: none;
     cursor: default;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+
+  .nav-link:hover::after,
+  .nav-link:focus::after {
+    margin-top: 1.65rem;
   }
 }

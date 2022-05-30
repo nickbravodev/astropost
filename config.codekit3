@@ -44,9 +44,9 @@
       "co" : 0,
       "ft" : 16,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/build\/css\/app.css",
-      "oF" : 0,
+      "oF" : 1,
       "pg" : 0
     },
     "\/source\/css\/app.scss" : {
@@ -207,7 +207,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/build\/css\/navbar.css",
       "oF" : 0,
       "oS" : 0,
@@ -427,10 +427,10 @@
       "tS" : 0
     },
     "\/source\/js\/main.js" : {
-      "bF" : 0,
+      "bF" : 4,
       "ft" : 64,
       "ma" : 0,
-      "mi" : 1,
+      "mi" : 2,
       "oA" : 0,
       "oAP" : "\/build\/js\/main.js",
       "oF" : 0,
@@ -486,12 +486,12 @@
 
   },
   "projectAttributes" : {
-    "creationDate" : 675574762.74655795,
+    "creationDate" : 674620734.250476,
     "displayValue" : "astropost",
     "displayValueWasSetByUser" : 0,
-    "iconImageName" : "brackets-koamaru",
+    "iconImageName" : "brackets-glace",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 675574773.72998798
+    "lastBuiltDate" : 674688865.27063596
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
