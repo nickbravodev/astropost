@@ -571,79 +571,84 @@
                 <input class="form-control" type="tel" id="phone" name="phone" placeholder="Phone">
               </div>
               <!-- Services checkbox input -->
-              <h3 class="form-grid--2 text-dark">Specific services needed</h3>
-              <!-- Services Column 1 -->
-              <div class="form-grid--1 form-grid--no-bottom-gap">
-                <h4>Design</h4>
-                <!-- Graphic Design / Branding -->
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Graphic Design" id="service-graphic-design">
-                  <label class="form-check-label" for="service-graphic-design">
-                    Graphic Design / Branding
-                  </label>
-                </div>
-                <!-- UI/UX Design -->
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="UI/UX Design" id="service-uiux">
-                  <label class="form-check-label" for="service-uiux">
-                    UI/UX Design
-                  </label>
-                </div>
-              </div>
-              <!-- Services Column 2 -->
-              <div class="form-grid--1">
-                <h4>Development</h4>
-                <!-- Static Site  -->
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Static Site " id="service-static-site">
-                  <label class="form-check-label" for="service-static-site">
-                    Static Site
-                  </label>
-                </div>
-                <!-- Dynamic Site  -->
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="Dynamic Site" id="service-dynamic-site">
-                  <label class="form-check-label" for="service-dynamic-site">
-                    Dynamic Site
-                  </label>
-                </div>
-              </div>
+              <fieldset>
+                <legend class="form-grid--2 text-dark">Services needed</legend>
+                <!-- Services Column 1 -->
+                <div class="form-grid--1">
+                  <!-- <h4>Design</h4> -->
+                  <!-- Graphic Design / Branding -->
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" name="service-graphic-design"
+                        value="Graphic Design / Branding"> Graphic
+                      Design / Branding
+                    </label>
+                  </div>
+                  <!-- UI/UX Design -->
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" name="service-uiux" value="UI/UX Design">
+                      UI/UX Design
+                    </label>
+                  </div>
+                  <!-- Services Column 2 -->
+                  <div class="form-grid--1">
+                    <!-- <h4>Development</h4> -->
+                    <!-- Static Site  -->
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="service-static-site" value="Static Site">
+                        Static Site
+                      </label>
+                    </div>
+                    <!-- Dynamic Site  -->
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="service-dynamic-site"
+                          value="Dynamic Site">
+                        Dynamic Site
+                      </label>
+                    </div>
+                  </div>
+              </fieldset>
               <!-- Estimated Budget -->
-              <h3 class="form-grid--2 text-dark">Estimated budget</h3>
-              <!-- Estimated Budget Column 1 -->
-              <div class="form-grid--1 form-grid--no-bottom-gap">
-                <!-- Under $10,000 -->
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="budget" id="under-10000">
-                  <label class="form-check-label" for="under-10000">
-                    Under $10,000
-                  </label>
+              <fieldset>
+                <legend class="form-grid--2 text-dark">Estimated budget</legend>
+                <!-- Estimated Budget Column 1 -->
+                <div class="form-grid--1">
+                  <!-- Under $10,000 -->
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="budget" value="Under $10,000">
+                      Under $10,000
+                    </label>
+                  </div>
+                  <!-- $10,000 - $30,000 -->
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="budget" value="$10,000 - $30,000">
+                      $10,000 - $30,000
+                    </label>
+                  </div>
                 </div>
-                <!-- $10,000 - $30,000 -->
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="budget" id="10000-30000">
-                  <label class="form-check-label" for="10000-30000">
-                    $10,000 - $30,000
-                  </label>
+                <!-- Estimated Budget Column 2 -->
+                <div class="form-grid--1">
+                  <!-- $30,000 - $50,000 -->
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="budget" value="$30,000 - $50,000">
+                      $30,000 - $50,000
+                    </label>
+                  </div>
+                  <!-- Over $50,000 -->
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="budget" value="Over $50,000">
+                      Over $50,000
+                    </label>
+                  </div>
                 </div>
-              </div>
-              <!-- Estimated Budget Column 2 -->
-              <div class="form-grid--1">
-                <!-- $30,000 - $50,000 -->
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="budget" id="30000-50000">
-                  <label class="form-check-label" for="30000-50000">
-                    $30,000 - $50,000
-                  </label>
-                </div>
-                <!-- Over $50,000 -->
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="budget" id="over-50000">
-                  <label class="form-check-label" for="over-50000">
-                    Over $50,000
-                  </label>
-                </div>
-              </div>
+              </fieldset>
               <!-- Project Summary input -->
               <div class="form-grid--2">
                 <label class="form-label visually-hidden" for="description">Project Summary*</label>
