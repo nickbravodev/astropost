@@ -61,7 +61,7 @@
       "oAP" : "\/build\/css\/app.css",
       "oF" : 0,
       "oS" : 0,
-      "pg" : 0,
+      "pg" : 2,
       "sct" : 0
     },
     "\/source\/css\/borders.scss" : {
@@ -491,7 +491,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-glace",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 674688865.27063596
+    "lastBuiltDate" : 675621933.29646301
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
@@ -2025,9 +2025,9 @@
         "**\/*.md",
         "**\/*.kit"
       ],
-      "removeFontFace" : 0,
-      "removeKeyframes" : 0,
-      "removeVariables" : 0,
+      "removeFontFace" : 1,
+      "removeKeyframes" : 1,
+      "removeVariables" : 1,
       "safelistEntries" : [
 
       ],
