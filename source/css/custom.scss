@@ -194,6 +194,18 @@ section {
 .card {
   border: 0;
   padding: 3rem;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.card-icon {
+  color: $astro-red;
+  width: 2rem;
+  height: min(100%, 2rem);
+  margin-bottom: 1rem;
+  margin-top: 0;
 }
 
 @include media-breakpoint-up(lg) {
