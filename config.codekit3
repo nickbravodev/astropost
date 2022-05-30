@@ -286,6 +286,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/source\/img\/astropost-icon-red.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/astropost-icon-red.svg",
+      "oF" : 0,
+      "opt" : 1,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/source\/img\/corporate-law-homepage.jpg" : {
       "ft" : 16384,
       "iS" : 135929,
