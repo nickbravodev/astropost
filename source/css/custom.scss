@@ -316,8 +316,8 @@ footer {
   color: $astro-light-100;
   padding: 0.75rem;
   margin: 0 0.1rem;
-  border-radius: 50%;
-  border: 0.1rem solid $astro-green;
+  border-radius: .5rem;
+  border: 0.08rem solid $astro-green;
   transition: all 150ms ease-out;
   // outline: none;
   // transition: border-color 150ms ease-out;
@@ -326,7 +326,7 @@ footer {
   &:hover,
   &:focus {
     background-color: $astro-red;
-    border-radius: .5rem;
+    // border-radius: .5rem;
     border-color: $astro-light-100;
     outline: none;
     // transition: all 150ms ease-out;
