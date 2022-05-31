@@ -269,7 +269,7 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 1,
-      "ou" : "lpckwebp-none",
+      "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 75
     },
@@ -282,7 +282,7 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 1,
-      "ou" : "lpckwebp-none",
+      "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 75
     },
@@ -305,7 +305,7 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 1,
-      "ou" : "lpckwebp-none",
+      "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 75
     },
@@ -318,7 +318,7 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 1,
-      "ou" : "lpckwebp-none",
+      "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 75
     },
@@ -331,7 +331,20 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 1,
-      "ou" : "lpckwebp-none",
+      "ou" : "lpckwebp-default",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/img\/Fortify-24x7-ad.png" : {
+      "ft" : 32768,
+      "iS" : 438117,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/Fortify-24x7-ad.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 75
     },
@@ -367,7 +380,7 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 1,
-      "ou" : "lpckwebp-none",
+      "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 75
     },
@@ -380,9 +393,22 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 1,
-      "ou" : "lpckwebp-none",
+      "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 75
+    },
+    "\/source\/img\/unredacted-magazine-002.png" : {
+      "ft" : 32768,
+      "iS" : 1001542,
+      "oA" : 0,
+      "oAP" : "\/build\/img\/unredacted-magazine-002.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-default",
+      "q" : 100,
+      "rq" : 50
     },
     "\/source\/index.html" : {
       "cB" : 0,
@@ -501,7 +527,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-glace",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 675622298.857795
+    "lastBuiltDate" : 675727053.03144705
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,

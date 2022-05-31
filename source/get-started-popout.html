@@ -1,227 +1,127 @@
-<!-- "Get Started" off-canvas popout -->
-<div class="container offcanvas offcanvas-end bg-dark get-started-popout" tabindex="-1" id="get-started"
-  aria-labelledby="offcanvasRightLabel">
-  <!-- "Get Started" header -->
-  <div class="offcanvas-header bg-dark py-4">
-    <!-- Brand logo -->
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- "Get Started" header text -->
-    <div class="ms-3 me-auto">
-      <h2 class="get-started-heading">Get Started</h2>
-      <p class="get-started-subheading">Fill out this form and send it over!</p>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- "Get Started" body -->
+    <div id="get-started-body" class="row bg-light d-flex">
+      <!-- "Get Started" form -->
+      <form name="get-started-form-test" id="get-started-form" action="index.html#success" method="post"
+        data-netlify="true" onsubmit="submit" data-netilfy-honeypot="bot-field" class="needs-validation" novalidate>
+        <!-- Notification email subject line -->
+        <input type="hidden" name="subject" value="Get Started submission at Astropost" />
+        <!-- Robot honeypot. That rhymes! -->
+        <div class="d-none">
+          <label>
+            Robot honeypot: Leave this field empty if you're human <input name="bot-field" />
+          </label>
+        </div>
+        <div class="form-grid">
+          <!-- First name input -->
+          <div class="form-grid--1">
+            <label class="form-label visually-hidden" for="first-name">First Name*</label>
+            <input class="form-control" type="text" id="first-name" name="first-name" placeholder="First Name*"
+              required>
+          </div>
+          <!-- Last name input -->
+          <div class="form-grid--1">
+            <label class="form-label visually-hidden" for="last-name">Last Name*</label>
+            <input class="form-control" type="text" id="last-name" name="last-name" placeholder="Last Name*" required>
+          </div>
+          <!-- Email input -->
+          <div class="form-grid--1">
+            <label class="form-label visually-hidden" for="email">Email*</label>
+            <input class="form-control" type="email" id="email" name="email" placeholder="Email*" required>
+          </div>
+          <!-- Phone input -->
+          <div class="form-grid--1">
+            <label class="form-label visually-hidden" for="phone">Phone</label>
+            <input class="form-control" type="tel" id="phone" name="phone" placeholder="Phone">
+          </div>
+          <!-- Services checkbox input -->
+          <fieldset class="form-grid--1">
+            <legend class="text-dark">Services needed</legend>
+            <!-- Graphic Design / Branding -->
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="services" value="Graphic Design / Branding">
+                Graphic Design / Branding
+              </label>
+            </div>
+            <!-- UI/UX Design -->
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="services" value="UI/UX Design">
+                UI/UX Design
+              </label>
+            </div>
+            <!-- Static Site  -->
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="services" value="Static Site">
+                Static Site
+              </label>
+            </div>
+            <!-- Dynamic Site  -->
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="services" value="Dynamic Site">
+                Dynamic Site
+              </label>
+            </div>
+          </fieldset>
+          <!-- Estimated Budget -->
+          <fieldset class="form-grid--1">
+            <legend class="text-dark">Estimated budget</legend>
+            <!-- Under $10,000 -->
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="budget" value="Under $10,000">
+                Under $10,000
+              </label>
+            </div>
+            <!-- $10,000 - $30,000 -->
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="budget" value="$10,000 - $30,000">
+                $10,000 - $30,000
+              </label>
+            </div>
+            <!-- $30,000 - $50,000 -->
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="budget" value="$30,000 - $50,000">
+                $30,000 - $50,000
+              </label>
+            </div>
+            <!-- Over $50,000 -->
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="budget" value="Over $50,000">
+                Over $50,000
+              </label>
+            </div>
+          </fieldset>
+          <!-- Project Summary input -->
+          <div class="form-grid--2">
+            <label class="form-label visually-hidden" for="description">Project Summary*</label>
+            <textarea class="form-control" type="text" rows="3" id="description" name="message"
+              placeholder="Project summary*" required></textarea>
+          </div>
+          <!-- Submit button -->
+          <div class="mb-4">
+            <button class="cta">Get started</button>
+          </div>
+        </div>
+      </form>
     </div>
-    <!-- Close button -->
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <!-- "Get Started" body -->
-  <div id="get-started-body" class="row offcanvas-body bg-light d-flex">
-    <!-- "Get Started" form -->
-    <form name="get-started-form" id="get-started-form" action="index.html#success" method="post" data-netlify="true"
-      onsubmit="submit" data-netilfy-honeypot="bot-field" class="needs-validation" novalidate>
-      <!-- Robot honeypot. That rhymes! -->
-      <div class="d-none">
-        <label>
-          Robot honeypot: Leave this field empty if you're human <input name="bot-field" />
-        </label>
-      </div>
-      <div class="form-grid">
-        <!-- First name input -->
-        <div class="form-grid--1">
-          <label class="form-label visually-hidden" for="first-name">First Name*</label>
-          <input class="form-control" type="text" id="first-name" name="first-name" placeholder="First Name*" required>
-        </div>
-        <!-- Last name input -->
-        <div class="form-grid--1">
-          <label class="form-label visually-hidden" for="last-name">Last Name*</label>
-          <input class="form-control" type="text" id="last-name" name="last-name" placeholder="Last Name*" required>
-        </div>
-        <!-- Email input -->
-        <div class="form-grid--1">
-          <label class="form-label visually-hidden" for="email">Email*</label>
-          <input class="form-control" type="email" id="email" name="email" placeholder="Email*" required>
-        </div>
-        <!-- Phone input -->
-        <div class="form-grid--1">
-          <label class="form-label visually-hidden" for="phone">Phone</label>
-          <input class="form-control" type="tel" id="phone" name="phone" placeholder="Phone">
-        </div>
-        <!-- Services checkbox input -->
-        <h3 class="form-grid--2 text-dark">Specific services needed</h3>
-        <!-- Services Column 1 -->
-        <div class="form-grid--1 form-grid--no-bottom-gap">
-          <h4>Design</h4>
-          <!-- Logo & Branding -->
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="Logo & Branding" id="service-logo-branding">
-            <label class="form-check-label" for="service-logo-branding">
-              Logo & Branding
-            </label>
-          </div>
-          <!-- Website Design -->
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="Graphic Design" id="service-website-design">
-            <label class="form-check-label" for="service-website-design">
-              Website Design
-            </label>
-          </div>
-          <!-- UI/UX Design -->
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="UI/UX Design" id="service-uiux">
-            <label class="form-check-label" for="service-uiux">
-              UI/UX Design
-            </label>
-          </div>
-          <!-- Ad Design -->
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="Ad Design" id="service-ad-design">
-            <label class="form-check-label" for="service-ad-design">
-              Ad Design
-            </label>
-          </div>
-          <!-- Print Design -->
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="Print Design" id="service-print-design">
-            <label class="form-check-label" for="service-print-design">
-              Print Design
-            </label>
-          </div>
-          <!-- Copy Writing / SEO -->
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="Copy Writing / SEO" id="service-copy-writing-seo">
-            <label class="form-check-label" for="service-copy-writing-seo">
-              Copy Writing / SEO
-            </label>
-          </div>
-          <!-- SEO -->
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="SEO" id="service-seo">
-            <label class="form-check-label" for="service-seo">
-              SEO
-            </label>
-          </div>
-        </div>
+    </div>
+  </body>
 
-
-
-
-
-        <!-- Services Column 2 -->
-        <div class="form-grid--1">
-          <h4>Development</h4>
-
-          <!-- Frontend Development -->
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="Frontend Development" id="service-frontend">
-            <label class="form-check-label" for="service-frontend">
-              Frontend Development
-            </label>
-          </div>
-          <!-- Back-End Development -->
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="Back-End Development" id="service-backend">
-            <label class="form-check-label" for="service-backend">
-              Back-End Development
-            </label>
-          </div>
-          <!-- APIs and Integrations -->
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="APIs and Integrations" id="service-integrations">
-            <label class="form-check-label" for="service-integrations">
-              APIs and Integrations
-            </label>
-          </div>
-          <!-- Ecommerce -->
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="Ecommerce" id="service-ecommerce">
-            <label class="form-check-label" for="service-ecommerce">
-              Ecommerce
-            </label>
-          </div>
-          <!-- Accessibility -->
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="Accessibility" id="service-accessibility">
-            <label class="form-check-label" for="service-accessibility">
-              Accessibility
-            </label>
-          </div>
-          <!-- Blog / CMS -->
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="Blog / CMS" id="service-blog-cms">
-            <label class="form-check-label" for="service-blog-cms">
-              Blog / CMS
-            </label>
-          </div>
-          <!-- Other (explain below) -->
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="Other (explain below)" id="service-other">
-            <label class="form-check-label" for="service-other">
-              Other (explain below)
-            </label>
-          </div>
-        </div>
-        <!-- Estimated Budget -->
-        <h3 class="form-grid--2 text-dark">Estimated budget</h3>
-        <!-- Estimated Budget Column 1 -->
-        <div class="form-grid--1 form-grid--no-bottom-gap">
-          <!-- Under $10,000 -->
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="budget" id="under-10000" checked>
-            <label class="form-check-label" for="under-10000">
-              Under $10,000
-            </label>
-          </div>
-          <!-- $10,000 - $30,000 -->
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="budget" id="10000-30000">
-            <label class="form-check-label" for="10000-30000">
-              $10,000 - $30,000
-            </label>
-          </div>
-        </div>
-        <!-- Estimated Budget Column 2 -->
-        <div class="form-grid--1">
-          <!-- $30,000 - $50,000 -->
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="budget" id="30000-50000">
-            <label class="form-check-label" for="30000-50000">
-              $30,000 - $50,000
-            </label>
-          </div>
-          <!-- Over $50,000 -->
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="budget" id="over-50000">
-            <label class="form-check-label" for="over-50000">
-              Over $50,000
-            </label>
-          </div>
-        </div>
-        <!-- Project Summary input -->
-        <div class="form-grid--2">
-          <label class="form-label visually-hidden" for="description">Project Summary*</label>
-          <textarea class="form-control" type="text" rows="3" id="description" name="message"
-            placeholder="Project summary*" required></textarea>
-        </div>
-        <!-- Submit button -->
-        <div class="mb-4">
-          <button class="cta">Get started</button>
-        </div>
-      </div>
-    </form>
-
-  </div>
-  <!-- <div class="resume-download">
-          <a href=""
-            target="_blank">
-            <svg class="resume-download-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
-              <g id="Icon_feather-download" data-name="Icon feather-download" transform="translate(-3 -3)">
-                <path id="Path_171" data-name="Path 171" d="M31.5,22.5v6a3,3,0,0,1-3,3H7.5a3,3,0,0,1-3-3v-6" fill="none"
-                  stroke="#dde0bd" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
-                <path id="Path_172" data-name="Path 172" d="M10.5,15,18,22.5,25.5,15" fill="none" stroke="#dde0bd"
-                  stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
-                <path id="Path_173" data-name="Path 173" d="M18,22.5V4.5" fill="none" stroke="#dde0bd"
-                  stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
-              </g>
-            </svg>
-          </a>
-        </div> -->
-</div>
+</html>

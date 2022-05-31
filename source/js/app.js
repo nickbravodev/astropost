@@ -10,7 +10,7 @@
           event.stopPropagation();
         } else if (form.checkValidity() == true) {
           event.preventDefault();
-          // form.submit();
+          form.submit();
         }
         form.classList.add('was-validated');
       }, false);
