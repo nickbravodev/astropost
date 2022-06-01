@@ -199,7 +199,7 @@ section {
 .card {
   border: 0;
   padding: 3rem;
-  transition: box-shadow 150ms ease-out;
+  transition: all 150ms ease-out;
 
   p {
     margin-bottom: 0;
@@ -208,6 +208,7 @@ section {
   &:hover,
   &:focus {
     box-shadow: 0.5rem 0.5rem $astro-red;
+    transform: translate(0, -0.25rem);
   }
 }
 
