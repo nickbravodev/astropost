@@ -121,8 +121,8 @@ section {
 }
 
 .brand-icon {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: auto;
   // display: flex;
   // align-items: center;
   // justify-content: center;
@@ -200,6 +200,7 @@ section {
   border: 0;
   padding: 3rem;
   transition: all 150ms ease-out;
+  box-shadow: 0rem 0.5rem 1.5rem rgb($astro-dark-900, .08);
 
   p {
     margin-bottom: 0;
@@ -207,7 +208,7 @@ section {
 
   &:hover,
   &:focus {
-    box-shadow: 0.5rem 0.5rem $astro-red;
+    box-shadow: 0rem 1rem 1.5rem rgb($astro-dark-900, .08);
     transform: translate(0, -0.25rem);
   }
 }
@@ -216,7 +217,7 @@ section {
   color: $astro-red;
   width: 2rem;
   height: min(100%, 2rem);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   margin-top: 0;
 }
 
@@ -324,7 +325,7 @@ footer {
   width: auto;
   overflow: visible;
   background-color: 0;
-  color: $astro-light-100;
+  color: $astro-light-200;
   padding: 0.75rem;
   margin: 0 0.1rem;
   border-radius: .5rem;
@@ -336,9 +337,10 @@ footer {
 
   &:hover,
   &:focus {
-    background-color: $astro-red;
+    color: $astro-light-100;
+    // background-color: $astro-red;
     // border-radius: .5rem;
-    border-color: $astro-light-100;
+    // border-color: $astro-light-100;
     // outline: none;
     // transition: all 150ms ease-out;
     // transition: border-color 150ms ease-out;
