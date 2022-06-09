@@ -476,6 +476,14 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/source\/sitemap.xml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/sitemap.xml",
+      "oF" : 0
+    },
     "\/source\/styles\/demo.scss" : {
       "aP" : 1,
       "bl" : 0,
