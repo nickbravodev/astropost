@@ -190,14 +190,21 @@ section {
   }
 }
 
-.card-grid,
-.card-grid--4 {
+.card-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  // grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
   grid-auto-rows: minmax(7rem, auto);
   margin-top: 3rem;
   margin-bottom: 4rem;
+}
+
+@include media-breakpoint-up(lg) {
+  .card-grid {
+    // grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
 }
 
 .card {
@@ -223,16 +230,6 @@ section {
   height: min(100%, 2rem);
   margin-bottom: 2rem;
   margin-top: 0;
-}
-
-@include media-breakpoint-up(lg) {
-  .card-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .card-grid--4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 
 
@@ -262,7 +259,7 @@ section {
   height: 3rem;
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   padding: 1rem;
   z-index: 10000;
 

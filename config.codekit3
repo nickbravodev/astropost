@@ -9,17 +9,11 @@
   ],
   "creatorBuild" : "34365",
   "files" : {
-    "\/build" : {
-      "ft" : 65536,
-      "oA" : 1,
-      "oAP" : "\/build\/build",
-      "oF" : 0
-    },
     "\/node_modules" : {
       "ft" : 65536,
       "oA" : 2,
       "oAP" : "\/build\/node_modules",
-      "oF" : 0
+      "oF" : 1
     },
     "\/package-lock.json" : {
       "ft" : 524288,
@@ -36,6 +30,17 @@
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
+    },
+    "\/sitemap-update.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/build\/sitemap-update.js",
+      "oF" : 1,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/source\/css\/app.css" : {
       "aP" : 1,
@@ -494,7 +499,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/build\/styles\/demo.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -507,9 +512,9 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/build\/styles\/main.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -525,9 +530,9 @@
     "creationDate" : 674620734.250476,
     "displayValue" : "astropost",
     "displayValueWasSetByUser" : 0,
-    "iconImageName" : "brackets-glace",
-    "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 675727053.03144705
+    "iconImageName" : "brackets-red",
+    "iconImageWasSetByUser" : 1,
+    "lastBuiltDate" : 676504797.01289201
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
