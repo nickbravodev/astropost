@@ -254,6 +254,7 @@ section {
 
 .p-card-links {
   position: absolute;
+  color: $astro-dark-800;
   bottom: 2rem;
   right: 1rem;
   height: 3rem;
@@ -265,6 +266,7 @@ section {
 
   a {
     padding: 0.8rem;
+    color: $astro-dark-800;
   }
 
   svg {

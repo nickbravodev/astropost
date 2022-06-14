@@ -1,10 +1,13 @@
 // Astropost color scheme
-$astro-dark-900: #111 !default;
+$astro-black: #111 !default;
+$astro-white: #fafafa !default;
+$astro-dark-900: $astro-black;
 $astro-dark-800: #555 !default;
-$astro-light-100: #f6f6f6 !default;
+$astro-light-100: $astro-white;
 $astro-light-200: #e8e8e8 !default;
 $astro-red: #ae1515 !default;
 $astro-green: #5e807f !default;
+$white: #fff;
 
 // NickBravo.dev color scheme
 $n-dark-1: $astro-dark-900  !default;
@@ -33,3 +36,4 @@ $body-color: $astro-dark-800;
 // $bg-dark-n: $n-dark-1;
 // Lighter text color
 // $text-color-n: $n-light-1;
+$carousel-control-color: $white  !default;
